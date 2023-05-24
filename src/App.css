@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.navbar__links li a {
+  text-decoration: none;
+}
+
+.nav_1 a{
+  color:black;
+}
+
+.getStarted {
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.getStarted a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar__links {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+
+  .getStarted a {
+    color: white; /* Added to ensure white color on smaller screens */
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.body_description {
+  font-size: 16px;
+  color: gray;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .body_description {
+    font-size: 14px;
+    color: gray;
+  }
+}
+
+.description {
+  font-size: 14px;
+  line-height: 25px;
+  color: gray;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+
+}
+
+.card {
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.paragraphText {
+  text-align: left;
+  align-items: left;
+  font-size: 13px;
+  font-weight: bold;
+  color: gray;
+  margin-left: -100px;
+}
+
+.dateContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.date {
+  font-size: 13px;
+  font-weight:500;
+  width:200px;
+  color:gray;
+  text-align: left;
+
+}
+
+
+.boldText {
+  font-weight: bold;
+  text-align: left;
+}
+
+.description {
+  text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
   }
 }
